@@ -23,9 +23,9 @@ diferente a depender do sistema operacional.
 ### Abrindo um parentese irei descrever o que vamos abordar no presente material
 
 - Conceitos básicos da linguagem
-- As principais formas de comentár seu código
-- O que é uma variável e suas caractéristicas
-- Os Principais Tipos Primitivos da Linguagem PHP
+- <a href="#comentarios">As principais formas de comentár seu código</a>
+- <a href="#variaveis_caracteristicas">O que é uma variável e suas caractéristicas</a>
+- <a href="#tipos_primitivos">Os Principais Tipos Primitivos da Linguagem PHP</a>
 - Operadores
     - <a href="https://www.php.net/manual/pt_BR/language.operators.logical.php" target="_blank">Lógicos</a>
     - <a href="https://www.php.net/manual/pt_BR/language.operators.arithmetic.php" target="_blank">Aritmetricos</a>
@@ -41,7 +41,7 @@ Uma vez o arquivo **index.php** todo código php desenvolvido vai dentro da tag 
 ?>
 ```
 
-#### Conceitos básicos da linguagem: Adicionando comentário ao seu código PHP
+#### <span id="comentarios">Conceitos básicos da linguagem: Adicionando comentário ao seu código PHP</span>
 <p>Um comentário é uma alternativa que o programador tem para descrever o que partes do seu código esta fazendo</p>
 
 ```php
@@ -78,7 +78,7 @@ todo comando php seja declarando uma variavel, ou chamando uma função do php o
     echo $message
 ```
 
-### O que é uma variável e suas caractéristicas
+### <span id="variaveis_caracteristicas">O que é uma variável e suas caractéristicas</span>
 
 <p>
 Toda variável em PHP tem seu nome composto pelo carácter $(dólar) e uma string, que deve iniciar por
@@ -175,7 +175,7 @@ Veja exemplos de variáveis PHP
 
 
 
-### Os Principais Tipos Primitivos da Linguagem PHP
+### <span id="tipos_primitivos">Os Principais Tipos Primitivos da Linguagem PHP</span>
 O php não é muito diferente a outras linguagem quando se trata de tipos primitivos de dados aqui vamos ver os mais comun que são utilizados
 - <a href="https://www.php.net/manual/pt_BR/language.types.integer.php" target="_blank">int</a> 
 - <a href="https://www.php.net/manual/pt_BR/language.types.float.php" target="_blank">float</a> 
