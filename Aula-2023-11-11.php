@@ -34,6 +34,8 @@
 
     echo $numeros[0];
 
+    
+
     /*
         Operadores Aritmetrico
         adição +
