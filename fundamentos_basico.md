@@ -20,16 +20,28 @@ diferente a depender do sistema operacional.
 
 ## 
 
-### Abrindo um parentese irei descrever o que vamos abordar no presente material
+### O que vamos Aprender
 
 - Conceitos básicos da linguagem
 - <a href="#comentarios">As principais formas de comentár seu código</a>
 - <a href="#variaveis_caracteristicas">O que é uma variável e suas caractéristicas</a>
 - <a href="#tipos_primitivos">Os Principais Tipos Primitivos da Linguagem PHP</a>
-- Operadores
+- <a href="#operadores">Operadores</a>
     - <a href="https://www.php.net/manual/pt_BR/language.operators.logical.php" target="_blank">Lógicos</a>
     - <a href="https://www.php.net/manual/pt_BR/language.operators.arithmetic.php" target="_blank">Aritmetricos</a>
     - <a href="https://www.php.net/manual/pt_BR/language.operators.comparison.php" target="_blank">Comparação</a>
+- Estrutura Condicional
+- Estrutura de Controle
+- Operador Ternário
+- funções PHP
+- Modulos PHP
+- Conceitos de Programação Orientada a Objetos
+- Desenvolvendo de projeto I e Tirando dúvidas
+- 
+- 
+- 
+
+
 
 
 #### Conceitos básicos da linguagem Tag de Abertura e Fechamento
@@ -185,7 +197,7 @@ O php não é muito diferente a outras linguagem quando se trata de tipos primit
 - <a href="https://www.php.net/manual/pt_BR/language.types.object.php" target="_blank">Objetos</a>
  
 
-
+## <span id="operadores">Operadores</span>
 ### Operadores - Lógicos
 Os operadores são elementos fundamentais quando se fala de linguagem de programação.
 Eles permitem realizar operações de comparação e combinação de valores boleanos, ou seja, valores verdadeiros(true) ou falsos (false)
