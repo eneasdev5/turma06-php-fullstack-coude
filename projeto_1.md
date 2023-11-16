@@ -1,8 +1,10 @@
 ### Projeto 1 
-desenvolvimento de um sistema que realiza operações de crud
 
-inicialmente será um código desenvolvido 100% em php puro sem html,css e javascript
+Desenvolva um sistema web com a função de realizar registro de um novo usuário, o login desse usuário, quando o usuario ser logado uma pagina home deverá aparecer para ele
 
-cada operação sql do crud será separada em um arquivo .php
 
-e será feita exibição dos dados na tela
+O site deve ter as seguintes paginas:
+- Logar usuário
+- Cadrastrar usuário
+- Mostrar página de sucesso quando o usuário conseguir logar
+- Uma página de error
