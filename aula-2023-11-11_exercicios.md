@@ -24,3 +24,9 @@ desenvolva um programa que recebe 3 idades distintas e
 calcula a média das idades e mostra na tela
 
 
+### Exercicios 03
+desenvolva um programa que armazena os dados de 5 pessoas e mostra na tela quais pessoas são Masculino e Quais são Feminino
+
+
+### Exercicios 04
+desenvolva um programa que guarda os dados de acesso(por exemplo login e senha) ao sistema e exiba se as informações são valida para logar no sistema atrávez de uma comparação lógica
