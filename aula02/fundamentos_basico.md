@@ -131,7 +131,7 @@ A estrutura de controle também chamada de estrutura de repetição, execulta um
 
 ### <span id="crud">Prática com PHP e MySql</span>
 <p>
-    Pessoal esse é o momento que vamos testar o conhecimento que apredenmos ate esse agora iremmos desenvolver um projeto de crud simples com php
+    Pessoal esse é o momento que vamos testar o conhecimento que aprendemos ate esse agora iremmos desenvolver um projeto de crud simples com php
 
-    a idea deste projeto é desenvover operações com o php e mysql
+    a ideia deste projeto é desenvover operações com o php e mysql
 </p>
