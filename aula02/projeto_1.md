@@ -8,3 +8,9 @@ O site deve ter as seguintes paginas:
 - Cadrastrar usuário
 - Mostrar página de sucesso quando o usuário conseguir logar
 - Uma página de error
+
+
+
+
+
+
