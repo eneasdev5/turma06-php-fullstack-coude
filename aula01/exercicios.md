@@ -29,5 +29,5 @@ desenvolva um programa que armazena os dados de 5 pessoas e mostra na tela quais
 
 
 ### Exercicios 04
-desenvolva um programa que guarda os dados de acesso(por exemplo login e senha) de um sistema e exiba se as informações são valida para logar no sistema atrávez de uma comparação lógica
-
+desenvolva um programa que guarda os dados de acesso(por exemplo login e senha) de um usuário e exiba se as informações são valida para logar no sistema atrávez de uma comparação lógica.
+<p>obs: os dados que torna essas crendencias valida pode ser definida por você.</p>
