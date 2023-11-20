@@ -36,6 +36,7 @@ diferente a depender do sistema operacional.
 
 
 
+
 #### Conceitos básicos da linguagem Tag de Abertura e Fechamento
 Uma vez o arquivo **index.php** todo código php desenvolvido vai dentro da tag de abertura e fechamento sua representação segue esta forma. 
 
