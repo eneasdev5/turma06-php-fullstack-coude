@@ -1,7 +1,7 @@
 
 ### Exercicios 01
 
-Desenvolva um programa que armazena informações de três pessoas para uma inscrição de entrevista de emprego, após armazenar em variaveis exiba as informações em tela de forma organizada:
+Desenvolva um programa que armazena informações de três pessoas, para uma inscrição de entrevista de emprego, após armazenar em variaveis exiba as informações em tela de forma organizada:
 - Nome
 - Genero
 - profissão 
@@ -29,4 +29,5 @@ desenvolva um programa que armazena os dados de 5 pessoas e mostra na tela quais
 
 
 ### Exercicios 04
-desenvolva um programa que guarda os dados de acesso(por exemplo login e senha) ao sistema e exiba se as informações são valida para logar no sistema atrávez de uma comparação lógica
+desenvolva um programa que guarda os dados de acesso(por exemplo login e senha) de um sistema e exiba se as informações são valida para logar no sistema atrávez de uma comparação lógica
+

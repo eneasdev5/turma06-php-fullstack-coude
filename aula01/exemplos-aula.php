@@ -72,7 +72,6 @@
     $quantidade++;
     echo $quantidade. '<br />'; 
 
-
     $quantidade--;
     print $quantidade;
 
