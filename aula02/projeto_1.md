@@ -9,8 +9,13 @@ O site deve ter as seguintes paginas:
 - Mostrar página de sucesso quando o usuário conseguir logar
 - Uma página de error
 
+Page Login 
+https://nicepage.com/Editor/Siteboard/#/builder/6055604/page/6055606
 
+exemplos de pages de about me
+https://nicepage.com/Editor/Siteboard/#/builder/6049296/page/6055663
 
+https://nicepage.com/joomla-templates/preview/i-am-a-digital-designer-3846478?device=desktop0
 
 
 
