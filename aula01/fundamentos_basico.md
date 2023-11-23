@@ -30,9 +30,7 @@ diferente a depender do sistema operacional.
     - <a href="https://www.php.net/manual/pt_BR/language.operators.logical.php" target="_blank">Lógicos</a>
     - <a href="https://www.php.net/manual/pt_BR/language.operators.arithmetic.php" target="_blank">Aritmetricos</a>
     - <a href="https://www.php.net/manual/pt_BR/language.operators.comparison.php" target="_blank">Comparação</a>
-- <a href='#estruturaCondicional'>Estrutura Condicional</a>
-- <a href='#estruturadecontrole'>Estrutura de Controle</a>
-- <a href='#funçõesphp'>Funções PHP</a>
+
 
 
 
