@@ -67,7 +67,7 @@ A estrutura de controle também chamada de estrutura de repetição, execulta um
         essa estrutura esta pecorrendo uma lista de numeros inteiros e exibindo na tela
     */
     
-    for(; $indice < count($numeros); $indice+=1) {
+    for($indice=0; $indice < count($numeros); $indice+=1) {
          
     }
 
