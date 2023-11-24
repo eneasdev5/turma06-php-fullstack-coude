@@ -6,9 +6,7 @@
     $pessoa = new stdClass();
     $pessoa->nome = '';
     $pessoa->sobrenome = '';
-    $pessoa->nomes = ['João', 'Pedro', 10, ['arroz', 'fejão',],45];
-    $pessoa->nomes[3][0]; // true
-    $pessoa->nomes[3][1]; // false
+    $pessoa->filmes = ['Transformers', 'Velozes e furiosos'];
 
     /* 
         Tipo Primitivos
@@ -22,19 +20,26 @@
 
     // variável do tipo array
     $numeros = [1, 2.51, 'text', false];
+    $numeros2 = [0];
  
     // ---------------------------------------
     // Comandos de saída
     $nome = "Jose";
     $sobrenome = "Santo";
 
-    echo '<p><strong>'.$nome . '</strong> ' . $sobrenome.'</p>';
+    // echo '<p><strong>'.$nome . '</strong> ' . $sobrenome.'</p>';
 
-    echo '<br />';
+    // echo '<br />';
 
-    echo $numeros[0];
+    // echo "<p> {$numeros2[1][0]} </p>";
 
-    
+    // echo '<pre>';
+    $pessoa = [
+        'nome' => 'Pedro',
+        'sobrenome' => 'Santo',
+        'filmes' => ['Transformers', 'Velozes e furiosos', 'Era do Gelo'],
+    ];
+    // var_dump($pessoa['filmes'][2]);
 
     /*
         Operadores Aritmetrico
@@ -47,43 +52,74 @@
         modulo %
       */
 
-    $numero1= 10;
-    $numero2 = 5;
+    // $numero1 = 10;
+    // $numero2 = 5;
 
 
-    echo '<p>Adição:'. $numero1+$numero2 .' </p>';
+    // echo '<p>Adição:'. $numero1+$numero2 .' </p>';
 
-    $calculo = $numero1-$numero2;
-    echo "<p>Subtração: $calculo </p>";
+    // $calculo = $numero1-$numero2;
+    // echo "<p>Subtração: $calculo </p>";
 
-    $calculo = $numero1*$numero2;
-    echo "<p>Multiplicação: $calculo </p>";
+    // $calculo = $numero1*$numero2;
+    // echo "<p>Multiplicação: $calculo </p>";
 
-    $calculo = $numero1/$numero2;
-    echo "<p>Divisão: $calculo </p>";
+    // $calculo = $numero1/$numero2;
+    // echo "<p>Divisão: $calculo </p>";
 
     
-    $quantidade = 0;
+    // $quantidade = 0;
 
-    $quantidade++;
-    $quantidade++;
-    $quantidade++;
-    $quantidade++;
-    $quantidade++;
-    echo $quantidade. '<br />'; 
+    // $quantidade++;
+    // $quantidade++;
+    // $quantidade++;
+    // $quantidade++;
+    // $quantidade++;
+    // $quantidade += 5;
+    // echo $quantidade. '<br />'; 
 
-    $quantidade--;
-    print $quantidade;
+    // $quantidade--;
+    // $quantidade -= 3;
+    // print $quantidade;
 
 
     /* Operadores de Comparação */
-    var_dump(10 > 5); // bool(true)
-    var_dump(10 < 5); // bool(false)
-    var_dump(10 >= 5); // bool(true)
-    var_dump(10 <= 5); // bool(false)
-    var_dump('5' == '5'); // bool(false)
-    var_dump(10 != 5); // bool(true)
+    // var_dump(!true); // bool(true)
+    // echo '<br>';
+    // var_dump(10 < 5); // bool(false)
+    // var_dump(10 >= 5); // bool(true)
+    // var_dump(10 <= 5); // bool(false)
+    // var_dump('5' == '5'); // bool(false)
+    // var_dump(10 != 5); // bool(true)
 
+
+
+
+    $idade = 15; 
+    $idade++;
+    $idade++;
+    $idade++;
+
+    
+    var_dump('1' !== 10);
+    var_dump(10 === '');
+    // valor != valor == false
+    // tipo != tipo == true
+
+    /* 
+        ==  10 == '10'
+        !=  10 != '10'
+
+        === 10 === '10' 
+        !== 10 !== '10'
+    
+    */
+
+    /*
+        AND --> &&
+        OR --> ||
+        Negação --> !
+    */
 ?>
  
 

@@ -44,6 +44,7 @@ $pretencaoSalario = 2500.00;
 $hobbies = ['vedeogame', 'práticar esporte'];
 
 
+
 // saída de dados
 $idade = 2023 - $registros[0][3];
 echo "<p>Nome: {$registros[0][0]}, Genero: {$registros[0][1]}, Profissão: {$registros[0][2]}, Idade: $idade,</p>";
