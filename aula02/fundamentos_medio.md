@@ -125,6 +125,20 @@ A estrutura de controle também chamada de estrutura de repetição, execulta um
         echo 'Produto: ' . $nome . '<br>';
     }
 
+
+    foreach($nomeDeProdutos as $indice => $nome){
+        if($indice == 10) {
+
+        }
+        echo 'Produto: ' . $nome . '<br>';
+    }
+
+
+
+
+
+
+
     /* Loop Enquanto Faça: Contador progressivo*/
     $indice = 0;
     while($indice > 10) {
