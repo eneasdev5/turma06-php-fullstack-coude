@@ -370,35 +370,35 @@
 
 // *** FUNCTIONS ***
 
-function lista_aprovados(array $alunos){
-    for ($i=0; $i < sizeof($alunos); $i++){
-        $media = ($alunos[$i]["n1"] + 2*$alunos[$i]["n2"])/3;
-        if ($media >= 7){
-            $aprovados[] = $alunos[$i]["nome"];
-        }
-    }
-    return $aprovados;
-} 
+// function lista_aprovados(array $alunos){
+//     for ($i=0; $i < sizeof($alunos); $i++){
+//         $media = ($alunos[$i]["n1"] + 2*$alunos[$i]["n2"])/3;
+//         if ($media >= 7){
+//             $aprovados[] = $alunos[$i]["nome"];
+//         }
+//     }
+//     return $aprovados;
+// } 
 
-$alunos = array(
-    ['nome' => 'Carlos', 'n1'=> 5.5, 'n2' => 9],
-    ['nome' => 'Pedro', 'n1'=> 5.9, 'n2' => 7.9],
-);
-echo '<pre>';
-var_dump(lista_aprovados($alunos));
-
-
+// $alunos = array(
+//     ['nome' => 'Carlos', 'n1'=> 5.5, 'n2' => 9],
+//     ['nome' => 'Pedro', 'n1'=> 5.9, 'n2' => 7.9],
+// );
+// echo '<pre>';
+// var_dump(lista_aprovados($alunos));
 
 
 
-$objeto = function($number) {
-    $logico = $number % 2 == 0;
-    if($logico) {
-        echo "Number é Par";
-    } else {
-        echo "Number é Impa";
-    }
-};
+
+
+// $objeto = function($number) {
+//     $logico = $number % 2 == 0;
+//     if($logico) {
+//         echo "Number é Par";
+//     } else {
+//         echo "Number é Impa";
+//     }
+// };
 
 
 
@@ -416,29 +416,41 @@ $objeto = function($number) {
 
 
 /*
-    Exercicios
-    quantos numero entre 0 e 100 são impares e quantos são pares
+   
 
-    quantos numeros são multiplo por 2, 3 e 5
-
-    segunda versão do Exercicios 03 mostre na tela quantas pessoas 
-
-    são do sexo maisculino quantas são do sexo feminino
-
-    desenvolva um programa que recebe um valor inteiro e realiza a contagem 0 ate 
-    o valor passado
-
-    desenvolva um programa que recebe um valor inteiro e realiza a contagem do 
-    valor passado até 0
-
-    desenvolva um algoritmo que dado um numero aleatorio realiza uma contagem progressiva 
-    ou regressiva
+    
 */
 
 
 
 
+// $inicio =0;
+// $passo = 1;
+// $fim = 13;
+// $texto = '';
+// while(true){ 
+//     if($fim > -1) {
+//         $inicio = 1;
+//         while($inicio <= $fim ){
+//             $texto .= "$inicio, ";
+//             $inicio += $passo;
+//         }
+//         break;
 
+//     } else if($fim < 0){
+//         $inicio = $fim;
 
+//         while($inicio <= 0) {
+//             $texto .= "$inicio, ";
+//             $inicio += $passo;
+//         }
+//         break;
+//     }
+
+//     break;
+// }
+// echo "$texto\n";
+
+echo is_int(-50);
 
 ?>
