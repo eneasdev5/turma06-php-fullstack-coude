@@ -78,7 +78,7 @@ Uma Dica Usem a função do php <b style="color:white">rand(min, max)</b> para g
 
 <hr>
 
-***Exercicios 4***
+***Exercicios 6***
 
 *Crie um algoritmo que dado um numero aleatorio realiza uma contagem progressiva ou regressiva*
 
@@ -92,7 +92,7 @@ Uma Dica Usem a função do php <b style="color:white">rand(min, max)</b> para g
 
 
 
-***Exeercicio 5***
+***Exeercicio 7***
 
 *João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho.*
 
