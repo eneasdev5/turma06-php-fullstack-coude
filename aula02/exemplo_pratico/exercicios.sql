@@ -1,4 +1,4 @@
-create DATABASE aula02;
+rand(min, max)rand(min, max)create DATABASE aula02;
 
 
 -- criar tabela de usuario
@@ -8,6 +8,9 @@ create table users(
     nickname varchar(200) unique not null,
     password varchar(200) not null
 );
+
+
+
 
 
 

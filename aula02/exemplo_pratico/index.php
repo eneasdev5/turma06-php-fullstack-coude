@@ -401,56 +401,28 @@
 // };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-   
-
-    
-*/
-
-
-
-
-// $inicio =0;
-// $passo = 1;
-// $fim = 13;
-// $texto = '';
-// while(true){ 
-//     if($fim > -1) {
-//         $inicio = 1;
-//         while($inicio <= $fim ){
-//             $texto .= "$inicio, ";
-//             $inicio += $passo;
-//         }
-//         break;
-
-//     } else if($fim < 0){
-//         $inicio = $fim;
-
-//         while($inicio <= 0) {
-//             $texto .= "$inicio, ";
-//             $inicio += $passo;
-//         }
-//         break;
-//     }
-
-//     break;
-// }
-// echo "$texto\n";
-
-echo is_int(-50);
-
+if (!isset($_SERVER['PHP_AUTH_USER'])) {
+    header('WWW-Authenticate: Basic realm="My Realm"');
+    header('HTTP/1.0 401 Unauthorized');
+    echo 'Texto enviado caso o usuário clique no botão Cancelar';
+    exit;
+} else {
+    echo "<p>Olá, {$_SERVER['PHP_AUTH_USER']}.</p>";
+    echo "<p>Você digitou {$_SERVER['PHP_AUTH_PW']} como sua senha.</p>";
+    echo '<pre>';
+    var_dump($_SERVER);
+    var_dump($_SESSION);
+    var_dump($_COOKIE);
+    var_dump(__FILE__);
+    var_dump(__LINE__);
+    var_dump(__NAMESPACE__);
+    var_dump(__DIR__);
+    var_dump(__CLASS__);
+    var_dump(__TRAIT__);
+    var_dump(__METHOD__);
+    var_dump(__FUNCTION__);
+    var_dump(__COMPILER_HALT_OFFSET__);
+    var_dump(__DIR__);
+}
+ 
 ?>
