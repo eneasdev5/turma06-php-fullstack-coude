@@ -92,7 +92,7 @@ Uma Dica Usem a função do php <b style="color:white">rand(min, max)</b> para g
 
 
 
-***Exeercicio 6***
+***Exeercicio 7***
 
 *João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho.*
 
