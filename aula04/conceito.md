@@ -20,22 +20,7 @@ Na ultima aula fizemos um simples projeto pratico de crud em uma tabelas de usua
 <img src='./time-de-desenvolvimento.png' />
 
 
-<style>
-    table {
-        border-collapse: collapse;
-        width: 500px;
-    }
-    table tr, td, th {
-        border: 3px solid;
-        text-align:center;
-    }
-    table td {
-        text-align: left;
-    }
-    table tr li {
-        list-style-type: none;
-    }
-</style>
+
 <table style="">
     <tr>
         <th>Equipe 1</th>
@@ -52,6 +37,7 @@ Na ultima aula fizemos um simples projeto pratico de crud em uma tabelas de usua
             <li>Wellington</li>
             <li>Pedro</li>
             <li>Elizeu</li>
+	    <li>Vitor</li>
         </td>
         <td>
             <li>Danilo</li>
