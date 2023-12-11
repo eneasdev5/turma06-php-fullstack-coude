@@ -19,9 +19,8 @@ Na ultima aula fizemos um simples projeto pratico de crud em uma tabelas de usua
 ### <span id='time_desenvolvimento'>Times de Desenvolvimento de projetos</span>
 <img src='./time-de-desenvolvimento.png' />
 
-
-
-<table style="">
+ 
+<table>
     <tr>
         <th>Equipe 1</th>
         <th>Equipe 2</th>
