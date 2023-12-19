@@ -1,9 +1,7 @@
 <?php
 
-include('./conexao.php');
 
-
-function buscar(int $usuario_id)
+function buscar(int $usuario_id = 0)
 {
     $conexao = getConnection();
     try {

@@ -1,21 +1,15 @@
 <?php
 
-$servername = "servername";
-$username = "username";
-$password = "password";
-$dbname = "dbname";
 $conexao = null;
 
 
-function getConnection()
-{
-    global $servername;
-    global $username;
-    global $password;
-    global $dbname;
+function getConnection(
+    $servername = '127.0.0.1',
+    $username = 'root',
+    $password = '',
+    $dbname = 'crud'
+) {
     global $conexao;
-
-
     try {
         if ($conexao != null) {
             return $conexao;

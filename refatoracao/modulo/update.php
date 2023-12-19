@@ -1,9 +1,5 @@
 <?php
 
-include('./conexao.php');
-
-
-
 function updateTable(array $dados)
 {
     $conexao = getConnection();

@@ -1,10 +1,6 @@
 <?php
 
-include('./conexao.php');
-
-
-
-function insertTable(array $dados)
+function insertTable(array $dados): int
 {
     $conexao = getConnection();
     try {
@@ -17,12 +13,13 @@ function insertTable(array $dados)
         $stmt->bindValue(':bairro', $dados['bairro']);
         $stmt->bindValue(':cidade', $dados['cidade']);
         $stmt->bindValue(':estado', $dados['estado']);
-        $status = $stmt->execute();
 
-        return $status;
+        $stmt->execute();
+        $last_id = $conexao->lastInsertId();
+        return $last_id;
     } catch (PDOException $th) {
         echo $th->getMessage() . '<br>';
-        return false;
+        return 0;
     } finally {
         $conexao = null;
     }

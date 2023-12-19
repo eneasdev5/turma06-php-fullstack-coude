@@ -1,7 +1,5 @@
 <?php
 
-include('./conexao.php');
-
 
 function Delete(int $usuario_id): bool
 {
