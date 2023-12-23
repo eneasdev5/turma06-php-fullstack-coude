@@ -4,24 +4,19 @@
 function buscar(int $usuario_id = 0)
 {
     $conexao = getConnection();
+    $table = 'usuario';
     try {
-
-
+        $query = "SELECT * FROM $table";
         if ($usuario_id != 0) {
-            $result = [];
-            $stmt = $conexao->prepare("SELECT * FROM usuario WHERE id=:id");
+            $query .= " WHERE id=:id";
+            $stmt = $conexao->prepare($query);
             $stmt->bindValue(':id', $usuario_id);
-
-            $stmt->execute();
-            $result = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $result;
+        } else {
+            $stmt = $conexao->prepare($query);
         }
 
-        $result = [];
-        $stmt = $conexao->prepare("SELECT * FROM usuario");
         $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $th) {
         echo $th->getMessage() . '<br>';
         return [];
