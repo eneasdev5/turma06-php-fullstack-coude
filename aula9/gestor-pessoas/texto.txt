@@ -1,0 +1,98 @@
+sistema de gestão de usuarios
+
+paginas
+- Home
+- Vizualizar
+- Cadastro
+- Meu Perfil
+- Editar usuario 
+- Excluir Usuario 
+
+
+Página: Home 
+
+Menu com links de redirecionamento entre páginas
+
+corpo do site com images, texto, titulos e etc...
+
+footer com o rodape da página 
+
+
+
+Página: Vizualizar
+
+Menu com links de redirecionamento entre páginas
+
+titulo da página 
+
+tabela para fazer a listagem de dados de usuarios 
+
+footer com o rodape da página
+
+
+
+Página: Cadastro
+
+Menu com links de redirecionamento entre páginas
+
+titulo da página 
+
+formulario para receber os dados de usuario, endereco e telefone do usuario
+
+footer com o rodape da página
+
+
+
+Página: Meu Perfil
+
+Menu com links de redirecionamento entre páginas
+
+titulo da página 
+
+paragrafos com as informações de um usuario especifico
+
+footer com o rodape da página
+
+
+Página: Editar usuario 
+
+Menu com links de redirecionamento entre páginas
+
+titulo da página 
+
+formulário preenchido com informações do usuários
+
+footer com o rodape da página
+
+
+Página: Excluir o usuario 
+
+não há conteúdo para esta página 
+
+
+
+BACKEND: PHP COM MYSQL
+
+criar um modulo para realizar as operações para refletir as ações realizadas pelos usuários no front-end 
+
+- ação de criar conexão com bando de dados
+- ação de selecionar informações da tabela no banco de dados 
+- ação de atualizar informações na tabela no banco de dados 
+- ação de excluir informações na tabela no banco de dados 
+- ação de criar informações na tabela no banco de dados 
+
+
+
+* para iniciar o projeto a primeira coisa a ser feita é criar uma pasta dentro do htdocs
+para meu projeto
+* após isso vamos criar o basico para o php se conectar com o banco de dados e vamos avançar com o front-end 
+* criar as página com HTML seguindo a estrutura já definida acima
+* criar a estrutura de pastas de nossos arquivos estaticos com css,javascript e images
+* adicionar css no HTML
+* adicionar o javascript no HTML
+ 
+
+
+
+
+
