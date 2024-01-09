@@ -15,8 +15,3 @@ serão capazes de desenvolver sistemas web de alta peformace do mercado o que h�
 - Modulos e Funções
 - Funções da linguagem PHP (principais)
 - Conexão com MySql com PDO
-
-
-
-
-

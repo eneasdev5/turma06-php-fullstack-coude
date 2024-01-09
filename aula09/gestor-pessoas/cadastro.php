@@ -66,9 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <h3>message </h3>
             </div> -->
             <?php if (!empty($register_result)) : ?>
-                <div class="message_error">
-                    <h3><?= $register_result ?></h3>
-                </div>
+            <div class="message_error">
+                <h3><?= $register_result ?></h3>
+            </div>
             <?php endif; ?>
 
             <form id="main_form_cadastrar" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 </div>
 
                 <div>
-                  <input type="number" id="ciNumero_residencial" name="cnNumero_residencial" placeholder="Número°" />
+                    <input type="number" id="ciNumero_residencial" name="cnNumero_residencial" placeholder="Número°" />
                 </div>
 
                 <div>
@@ -118,8 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <input type="number" id="ciTelefone" name="cnTelefone[]" placeholder="(00) 00000-0000">
                         <button type="button" id="ciButtonAddTel">Adicionar Telefone</button>
                     </div>
-                </div>  
-
+                </div>
                 <div class="btn_submit_form_cad">
                     <button type="submit">Cadastrar</button>
                 </div>

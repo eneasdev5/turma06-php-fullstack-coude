@@ -33,6 +33,7 @@ function adcElemento() {
 
     cxTelefones.setAttribute("class", "layoutTelefone");
     console.log(cxTelefones.className);
+
     cxTelefones.appendChild(newInTelefone);
     cxTelefones.appendChild(newInButton);
 
