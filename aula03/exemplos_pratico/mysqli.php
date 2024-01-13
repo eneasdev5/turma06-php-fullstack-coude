@@ -5,12 +5,14 @@
 // $password = ""; // Create connection 
 // $dbname = 'crud';
 
+
 // $conn = mysqli_connect($servername, $username, $password, $dbname); // Check connection 
 // if (!$conn) {
 //     die("Connection failed: " . mysqli_connect_error());
 // }
 
-// // Create database
+
+// Create database
 // $sql = " CREATE DATABASE myDB";
 // if (mysqli_query($conn, $sql)) {
 //     echo "Database created successfully";
@@ -33,19 +35,19 @@
 // }
 
 // // sql to create table
-// $sql = "CREATE TABLE MyGuests (
-//     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//     firstname VARCHAR(30) NOT NULL,
-//     lastname VARCHAR(30) NOT NULL,
-//     email VARCHAR(50),
-//     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-//     )";
+$sql = "CREATE TABLE MyGuests (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL,
+    lastname VARCHAR(30) NOT NULL,
+    email VARCHAR(50),
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    )";
 
-// if (mysqli_query($conn, $sql)) {
-//     echo "Table MyGuests created successfully";
-// } else {
-//     echo "Error creating table: " . mysqli_error($conn);
-// }
+if (mysqli_query($conn, $sql)) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . mysqli_error($conn);
+}
 
 // mysqli_close($conn);
 
@@ -61,22 +63,27 @@
 
 
 // // Create connection
-// $conn = mysqli_connect($servername, $username, $password, $dbname);
-// // Check connection
-// if (!$conn) {
-//     die("Connection failed: " . mysqli_connect_error());
-// }
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
-// $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-//     VALUES ('John', 'Doe', 'john@example.com')";
+$nome = 'John';
+$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+    VALUES ('.$nome.', 'Doe', 'john@example.com')";
 
-// if (mysqli_query($conn, $sql)) {
-//     echo "New record created successfully";
-// } else {
-//     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-// }
+$login = "user";
+$senha = "123";
+$sql = "SELECT id, login, senha FROM user where login =" . $login . " AND senha=" . $senha;
 
-// mysqli_close($conn);
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
 
 
 
@@ -88,24 +95,26 @@
 
 
 // // Create connection
-// $conn = mysqli_connect($servername, $username, $password, $dbname);
-// // Check connection
-// if (!$conn) {
-//     die("Connection failed: " . mysqli_connect_error());
-// }
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
-// $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-//     VALUES ('John 20', 'Doe2', 'john2@example.com')";
+$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+    VALUES ('John 20', 'Doe2', 'john2@example.com')";
 
-// if (mysqli_query($conn, $sql)) {
-//     $last_id = mysqli_insert_id($conn);
-//     echo "New record created successfully. Last inserted ID is: " . $last_id;
-// } else {
-//     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-// }
+if (mysqli_query($conn, $sql)) {
+    $last_id = mysqli_insert_id($conn);
 
 
-// mysqli_close($conn);
+    echo "New record created successfully. Last inserted ID is: " . $last_id;
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+
+mysqli_close($conn);
 
 
 

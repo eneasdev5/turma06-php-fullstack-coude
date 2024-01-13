@@ -13,6 +13,7 @@ let addError = false;
 let divRaizTelefones = document.getElementById("telefones");
 
 function adcElemento() {
+  debugger;
   if (countTelefone <= 3) {
     let newInTelefone = document.createElement("input"); // cria o element HTML, input
     newInTelefone.setAttribute("type", "number"); // adiciona atributo type no input
