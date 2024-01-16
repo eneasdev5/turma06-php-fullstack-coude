@@ -1,148 +1,86 @@
 <?php
 
-// $servername = "127.0.0.1";
-// $username = "root";
-// $password = ""; // Create connection 
-// $dbname = 'crud';
-
-
-// $conn = mysqli_connect($servername, $username, $password, $dbname); // Check connection 
-// if (!$conn) {
-//     die("Connection failed: " . mysqli_connect_error());
-// }
-
-
-// Create database
-// $sql = " CREATE DATABASE myDB";
-// if (mysqli_query($conn, $sql)) {
-//     echo "Database created successfully";
-// } else {
-//     echo "Error creating database: " . mysqli_error($conn);
-// }
-// mysqli_close($conn);
-
-
-// $servername = "127.0.0.1";
-// $username = "root";
-// $password = ""; // Create connection 
-// $dbname = 'crud';
-
-// Create connection
-// $conn = mysqli_connect($servername, $username, $password, $dbname);
-// // Check connection
-// if (!$conn) {
-//     die("Connection failed: " . mysqli_connect_error());
-// }
-
-// // sql to create table
-$sql = "CREATE TABLE MyGuests (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR(30) NOT NULL,
-    email VARCHAR(50),
-    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-    )";
-
-if (mysqli_query($conn, $sql)) {
-    echo "Table MyGuests created successfully";
-} else {
-    echo "Error creating table: " . mysqli_error($conn);
-}
-
-// mysqli_close($conn);
-
-
-
-
-
-
-// $servername = "127.0.0.1";
-// $username = "root";
-// $password = "";
-// $dbname = 'crud';
-
-
-// // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-$nome = 'John';
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-    VALUES ('.$nome.', 'Doe', 'john@example.com')";
-
-$login = "user";
-$senha = "123";
-$sql = "SELECT id, login, senha FROM user where login =" . $login . " AND senha=" . $senha;
-
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
-mysqli_close($conn);
-
-
-
-// insert last id
-// $servername = "127.0.0.1";
-// $username = "root";
-// $password = "";
-// $dbname = 'crud';
-
-
-// // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-    VALUES ('John 20', 'Doe2', 'john2@example.com')";
-
-if (mysqli_query($conn, $sql)) {
-    $last_id = mysqli_insert_id($conn);
-
-
-    echo "New record created successfully. Last inserted ID is: " . $last_id;
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
-
-mysqli_close($conn);
-
-
-
-
-
-
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = 'crud';
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+
+$conexao = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conexao) { // Check connection
+  die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT id, firstname, lastname FROM MyGuests";
-$result = mysqli_query($conn, $sql);
+$action = isset($_GET['action']) ? $_GET['action'] : 'select';
 
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "\n";
+switch ($action) {
+  case 'select':
+    /**
+     * CRUD: Select Table
+     */
+    $sql = "SELECT * FROM usuarios";
+    $result = mysqli_query($conexao, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+      while ($usuario = mysqli_fetch_assoc($result)) {
+        echo "<p>ID: {$usuario['id']}</p>";
+        echo "<p>Nome: {$usuario['nome']}</p>";
+        echo "<p>Email: {$usuario['email']}</p>";
+        echo "<p>Nickname: {$usuario['nickname']}</p><hr>";
+      }
     }
-} else {
-    echo "0 results";
-}
+    break;
+  case 'insert':
+    /**
+     * CRUD: Insert Table
+     */
+    $pessoa = [
+      'nome' => 'Pedro Santana',
+      'email' => 'pedro145@hotmail.com',
+      'nickname' => 'pedro145',
+      'senha' => 'pedro13'
+    ];
+    $sql = "INSERT INTO usuarios (nome,email,nickname,senha) VALUES ('{$pessoa["nome"]}','{$pessoa["email"]}','{$pessoa["nickname"]}','{$pessoa["senha"]}')";
 
-mysqli_close($conn);
+    if (mysqli_query($conexao, $sql)) {
+      echo "Table Usuario created successfully";
+    } else {
+      echo "Error creating table: " . mysqli_error($conexao);
+    }
+    break;
+  case 'update':
+    /**
+     * CRUD: Update Table
+     */
+    $pessoa = [
+      'id' => (int)$_GET['id'],
+      'nome' => 'Pedro',
+      'email' => 'pedroUp',
+      'nickname' => 'pedroUp',
+      'senha' => 'pedroUp'
+    ];
+    $sql = "UPDATE usuarios SET nome='{$pessoa['nome']}',email='{$pessoa['email']}',nickname='{$pessoa['nickname']}',senha='{$pessoa['senha']}' WHERE id='{$pessoa['id']}'";
+
+    if (mysqli_query($conexao, $sql)) {
+      echo "Table Usuario atualizada with successfully";
+    } else {
+      echo "Error creating table: " . mysqli_error($conexao);
+    }
+    break;
+  case 'delete':
+    /*
+     * DB: Delete Table
+     */
+    $id = (int)$_GET['id'];
+    $sql = "DELETE FROM usuarios WHERE id='{$id}'";
+
+    if (mysqli_query($conexao, $sql)) {
+      echo "<p>Table Usuario Removido with successfully</p>";
+    } else {
+      echo "<p>Error creating table: " . mysqli_error($conexao) . "</p>";
+    }
+    break;
+  default:
+    $conexao = null;
+    break;
+}
