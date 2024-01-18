@@ -25,7 +25,7 @@ foreach ($senhas as $senha) {
 
 
 // faz a checagem se a senha vinda do form bate com a hash da senha no banco 
-function verificando_senha(string $senha, string $hash_senha): string
+function verificando_senha(string $senha, string $hash_senha): bool
 {
     return password_verify($senha, $hash_senha);
 }
