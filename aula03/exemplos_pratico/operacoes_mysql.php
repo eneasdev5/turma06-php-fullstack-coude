@@ -6,14 +6,14 @@
 /**
  * CRUD: Create Connect ao Mysql
  */
-$conn = null;
+$conexao = null;
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "crud";
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $conexao = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $exception) {
   var_dump($exception->getMessage());
 }
@@ -26,7 +26,7 @@ switch ($action) {
      * CRUD: Select Table
      */
     try {
-      $stmt = $conn->prepare("SELECT * FROM usuarios");
+      $stmt = $conexao->prepare("SELECT * FROM usuarios");
       $stmt->execute();
       $result = $stmt->fetchAll();
 
@@ -52,7 +52,7 @@ switch ($action) {
     ];
 
     try {
-      $stmt = $conn->prepare("INSERT INTO usuarios (nome,email,nickname,senha) VALUES (:nome,:email,:nickname,:senha)");
+      $stmt = $conexao->prepare("INSERT INTO usuarios (nome,email,nickname,senha) VALUES (:nome,:email,:nickname,:senha)");
       $stmt->bindValue(":nome", $pessoa['nome']);
       $stmt->bindValue(":email", $pessoa['email']);
       $stmt->bindValue(":nickname", $pessoa['nickname']);
@@ -76,7 +76,7 @@ switch ($action) {
     ];
     try {
       $query = "UPDATE usuarios SET nome=:nome,email=:email,nickname=:nickname,senha=:senha WHERE id=:id";
-      $stmt = $conn->prepare($query);
+      $stmt = $conexao->prepare($query);
       $stmt->bindValue(":nome", $pessoa['nome']);
       $stmt->bindValue(":email", $pessoa['email']);
       $stmt->bindValue(":nickname", $pessoa['nickname']);
@@ -95,7 +95,7 @@ switch ($action) {
      */
     $userID = (int)$_GET['id'];
     try {
-      $stmt = $conn->prepare("DELETE FROM usuarios WHERE id=:id");
+      $stmt = $conexao->prepare("DELETE FROM usuarios WHERE id=:id");
       $stmt->bindValue(":id", $userID);
       $stmt->execute();
       echo '<p>Usuario removido com sucesso</p>';
