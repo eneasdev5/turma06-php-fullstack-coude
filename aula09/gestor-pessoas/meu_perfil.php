@@ -73,7 +73,6 @@ $path_image = './static/image/usuario-perfil-site.png';
         </footer>
     </main>
 
-
 </body>
 
 </html>
