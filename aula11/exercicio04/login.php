@@ -13,8 +13,8 @@ if (!$conexao) { // Check connection
 }
 
 
-$nome = $_GET['login'];
-$senha = $_GET['senha'];
+$nome = $_POST['login'];
+$senha = $_POST['senha'];
 
 
 $result = mysqli_query($conexao, "select * from usuarios where nickname='" . $nome . "'");
@@ -22,7 +22,7 @@ if (mysqli_num_rows($result) > 0) {
     $dados = mysqli_fetch_assoc($result);
 
     if (password_verify($senha, $dados['senha'])) {
-        $_SESSION['usuario'] = $dados['id'];
+        $_SESSION['usuario'] = ['id' => $dados['id'], 'type' => 'Funcionario'];
 
         header("location: ./dashboad.php?nome={$dados["nome"]}");
     } else {

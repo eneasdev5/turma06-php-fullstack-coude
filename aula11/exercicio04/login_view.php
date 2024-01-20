@@ -59,12 +59,15 @@
 <body>
     <!-- 
 
-    4: Crie um script que faz o controle de permissão dos usuários a um sistema sendo que cada usuário deve ser identificado por sua categoria, por exemplo: Gerente, Vendedor, Atendente de Caixa etc…, um segundo array deve ser criado para representar ações que esses usuário poderá ou não executar
+    4: Crie um script que faz o controle de permissão dos usuários a um sistema 
+    sendo que cada usuário deve ser identificado por sua categoria, por exemplo: 
+        Gerente, Vendedor, Atendente de Caixa etc…, um segundo array deve ser 
+        criado para representar ações que esses usuário poderá ou não executar
 
      -->
 
     <h1>Acesso Do usuário</h1>
-    <form action="./login.php">
+    <form action="./login.php" method="POST">
         <label for="" class="p-1">Usuario</label>
         <input type="text" name="login" class="p-1">
 

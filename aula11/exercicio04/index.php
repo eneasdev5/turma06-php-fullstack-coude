@@ -1,4 +1,6 @@
 <?php
+
+
 define("URI_BASE", "/curso-fullstack-php/turma06-php-fullstack-coude/aula11/exercicio04");
 
 switch ($_GET['page']) {
