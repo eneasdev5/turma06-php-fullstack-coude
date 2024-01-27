@@ -7,7 +7,7 @@ function getConnection(
     $username = 'root',
     $password = '',
     $dbname = 'crud'
-) {
+): PDO {
     global $conexao;
     try {
         if ($conexao == null) {
