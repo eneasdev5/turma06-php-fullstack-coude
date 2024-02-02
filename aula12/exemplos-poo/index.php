@@ -1,16 +1,11 @@
 <?php
 
-/* 
-    Você vai criar uma classe chamada Aluno, tendo como atributos as variáveis $ra, $nome, $curso e os métodos getCurso() e setCurso() que devem retorna e armazenar os cursos do aluno, respectivamente.
-
-*/
-
 /*
-    Crie uma class chamada Cliente e outras duas PessoaFisica e PessoaJuridica
-    para a classe PessoaFisica terá um atributo CPF 
-    para a classe PessoaJuridica terá um atributo CNPJ
-*/
+    Você vai criar uma classe chamada Aluno, tendo como atributos as variáveis
+    $ra, $nome, $curso e os métodos getCurso() e setCurso() que devem retorna
+    e armazenar os cursos do aluno, respectivamente.
 
+*/
 class Aluno
 {
     // Atributos
@@ -39,7 +34,11 @@ class Aluno
 // var_dump($a);
 
 
-
+/*
+    Crie uma class chamada Cliente e outras duas PessoaFisica e PessoaJuridica
+    para a classe PessoaFisica terá um atributo CPF
+    para a classe PessoaJuridica terá um atributo CNPJ
+*/
 // Herança
 class Cliente
 {

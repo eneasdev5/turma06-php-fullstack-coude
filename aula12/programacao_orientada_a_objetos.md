@@ -47,7 +47,7 @@ características (dados) e quais as suas capacidades (funcionalidades).
 
 ```php
 /*  
-    Uma Classe no PHP deve ser definida da seguinte forma: 
+    Uma Classe no PHP deve ser definida da seguinte forma:
 
     class nome_classe {
         Atributos
@@ -174,7 +174,6 @@ que contêm a classe não podem acessar esses atributos ou métodos.
 
 
 ```php
-
 class Pessoas {
   private $_tipo;
   protected $_nome;
@@ -189,7 +188,6 @@ class Estudante extends Pessoas {
 $e = new Estudante();
 $e->_tipo = "A"; // Erro
 echo $e->_tipo; // Erro
-
 ```
 
 
@@ -204,7 +202,7 @@ e getCarro().
 
 
 Exercicio 02
-Desenvolva um exercicio que simula uma agencia bancaria então crie as 
+Desenvolva um exercicio que simula uma agencia bancaria então crie as
 seguintes classes
 
 Agencia(Nome)
@@ -213,9 +211,6 @@ Banco(clienteName, saldo, agencia){
     depositar(valor)
     transferir(clienteDestino, valor)
 }
-
-
-
 
 
 Por padrão, utiliza-se os métodos com nomenclatura
@@ -230,8 +225,8 @@ O construtor, referenciado no PHP como __construct(), é uma função
 definida na classe e que é executada sempre que o objeto é criado
 (isto é, sempre que a classe é instanciada).
 
-O destruidor da classe, que é definido através da função __destruct(), 
-é executado sempre que o objeto for destruído, seja explícita ou 
+O destruidor da classe, que é definido através da função __destruct(),
+é executado sempre que o objeto for destruído, seja explícita ou
 implicitamente (por exemplo, no término do script que utilizava a classe)
 
 
@@ -242,9 +237,8 @@ Recaptulando:
 - Objetos
 - Atributos
 - Métodos
-- Herança 
+- Herança
 - Encapsulamento
 
 Link:
 - https://www.dio.me/articles/pilares-de-poo-em-java
-
