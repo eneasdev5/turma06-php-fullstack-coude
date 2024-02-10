@@ -237,7 +237,6 @@ class Contador
 // for ($r = 1000000; $r > 80; $r--)
 //   $c->Zerar();
 
-
 // // $c->RetornarvalorDoContador();
 
 // echo '<p>Contador: ' . $c->getContador() . '</p>';
@@ -290,10 +289,10 @@ class Ponto2D
 }
 
 
-// $p = new Ponto2D();
-// $p->ladoX = 5;
-// $p->ladoY = 2;
-// var_dump($p->area());
-// var_dump($p);
+$p = new Ponto2D();
+$p->ladoX = 5;
+$p->ladoY = 2;
+var_dump($p->area());
+var_dump($p);
 
-echo phpinfo();
+// echo phpinfo();

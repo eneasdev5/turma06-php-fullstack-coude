@@ -55,7 +55,7 @@
 a) Classe: Porta - Atributos: aberta, cor, dimensaoX, dimensaoY, dimensaoZ Métodos: void abre(), void fecha(), void pinta(String s).
 
 b) Classe: Casa - Atributos: cor, porta1, porta2, porta3 Métodos: void pinta(String s), 
-totalDePortas() int quantasPortasEstaoAbertas() int.
+int totalDePortas() quantasPortasEstaoAbertas() int.
 
 c) Classe: Edificio - Atributos: cor, totalDePortas, totalDeAndares, portas[] Métodos: void pinta(String s), int quantasPortasEstaoAbertas(), void adicionaPorta(Porta p), int totalDePortas(), void adicionarAndar(), int totalDeAndares().
 

@@ -1,10 +1,23 @@
 <?php
 class Agencia
 {
-    public $nome;
-    public function __construct($nome)
+    public string $nome;
+    protected bool $aberto;
+
+    public function __construct(string $nome, bool $aberto)
     {
         $this->nome = $nome;
+        $this->aberto = $aberto;
+    }
+
+    public function getAgenciaIsOpen(): bool
+    {
+        return $this->aberto;
+    }
+
+    public function setAberto(bool $aberto): void
+    {
+        $this->aberto = $aberto;
     }
 }
 

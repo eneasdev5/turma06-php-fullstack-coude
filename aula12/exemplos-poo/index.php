@@ -40,9 +40,12 @@ class Aluno
     para a classe PessoaJuridica terá um atributo CNPJ
 */
 // Herança
+// definição da classe cliente
 class Cliente
 {
-    var string $nome;
+    // definição de atributos
+    var $nome;
+    public $nomew;
 
     public function __construct(string $nome)
     {
@@ -76,11 +79,11 @@ class PessoaJuridica extends Cliente
 }
 
 // novas instancia de classe
-// $cliente = new Cliente("Cliente 01");
-// $pessoaFisica = new PessoaFisica("Cliente Pessoa Fisica", "1243234");
-// $pessoaJuridica = new PessoaJuridica("Cliente Pessoa Juridica", "2216747234237");
+$cliente = new Cliente("Cliente 01");
+$pessoaFisica = new PessoaFisica("Cliente Pessoa Fisica", "1243234");
+$pessoaJuridica = new PessoaJuridica("Cliente Pessoa Juridica", "2216747234237");
 
-// var_dump($cliente, $pessoaFisica, $pessoaJuridica);
+var_dump($cliente, $pessoaFisica, $pessoaJuridica);
 
 
 
@@ -217,7 +220,6 @@ $clienteJose = new Banco("Jose", $agencia);
 $clientePedro = new Banco("Pedro", $agencia);
 $clienteAgiota = new Banco("Agiota Fulano", $agencia);
 $clienteAgiota->depositar(50000);
-
 $clienteJose->depositar(1000);
 $clientePedro->depositar(500);
 

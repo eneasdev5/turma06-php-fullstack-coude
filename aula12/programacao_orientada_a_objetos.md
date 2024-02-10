@@ -242,3 +242,24 @@ Recaptulando:
 
 Link:
 - https://www.dio.me/articles/pilares-de-poo-em-java
+
+
+
+
+
+
+Material da próxima aula
+- Interface
+- polimorfismo
+- classes abstract
+- Operador de Resolução de Escopo (::)
+- Palavra-​Chave 'static'
+- Sobrecarga
+- Iteração de Objetos
+- Métodos mágicos
+- Autoloading Classes
+- Herança de Objetos
+- estruturação do projeto com MVC
+
+
+
